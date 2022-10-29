@@ -66,6 +66,12 @@
         .bg-ijo{
             background-color: #679289;
         }
+        .bg-kotak{
+            background-color: #FFFF00 !important;
+        }
+        .text-nilai{
+            color: #2A367E;
+        }
 
 
     </style>

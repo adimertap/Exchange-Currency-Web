@@ -46,7 +46,7 @@
             <div class="col-2" style="margin-left: 40px">
               <img src="{{ $item->img_flag }}" alt="flag" height="80" width="80" />
             </div>
-            <div class="card col-4 bg-secondary">
+            <div class="card col-4 bg-kotak">
               <div class="card-body" style="padding: 0.6rem 0.6rem">
                 <h1 class="mb-md-0 fw-bolder text-tes text-center">{{ $item->nama_currency }}</h1>
                 @if($item->keterangan == '' || $item->keterangan == '-')
@@ -58,7 +58,7 @@
             </div>
             <div class="card col-4">
               <div class="card-body" style="padding: 0.5rem 0.5rem">
-                <h1 class="mb-md-0 fw-bold">{{ number_format($item->nilai_kurs,0,',','.') }}</h1>
+                <h1 class="mb-md-0 fw-bold text-nilai">{{ number_format($item->nilai_kurs,0,',','.') }}</h1>
 
               </div>
             </div>
@@ -80,14 +80,14 @@
           <div class="col-2">
             <img src="{{ $item->img_flag }}" alt="flag" height="60" width="60" />
           </div>
-          <div class="card col-4 bg-secondary">
+          <div class="card col-4 bg-kotak">
             <div class="card-body" style="padding: 0.5rem 0.5rem">
               <h2 class="mb-md-0 fw-bolder text-tes text-center">{{ $item->nama_currency }}</h2>
             </div>
           </div>
           <div class="card col-4">
             <div class="card-body" style="padding: 0.5rem 0.5rem">
-              <h2 class="mb-md-0 fw-bold">{{ number_format($item->nilai_kurs,0,',','.') }}</h2>
+              <h2 class="mb-md-0 fw-bold text-nilai">{{ number_format($item->nilai_kurs,0,',','.') }}</h2>
             </div>
           </div>
         </div>
