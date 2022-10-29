@@ -38,7 +38,7 @@
         .tesh1{
             color: black;
             white-space: nowrap;
-            padding: 0 6rem;
+            padding: 0rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             animation: move-rtl 14000ms linear infinite;
