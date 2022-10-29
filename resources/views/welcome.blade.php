@@ -43,7 +43,7 @@
         <div class="col-6 mb-3">
           <div class="row flex-between-center">
             <div class="col-2" style="margin-left: 40px">
-              <img src="{{ $item->img_flag }}" alt="flag" height="60" />
+              <img src="{{ $item->img_flag }}" alt="flag" height="60" width="60" />
             </div>
             <div class="card col-4 bg-primary">
               <div class="card-body" style="padding: 0.6rem 0.6rem">
@@ -77,7 +77,7 @@
       <div class="col-11 mb-3" style="margin-left: 16px">
         <div class="row flex-between-center">
           <div class="col-2">
-            <img src="{{ $item->img_flag }}" alt="flag" height="50" />
+            <img src="{{ $item->img_flag }}" alt="flag" height="50" width="50" />
           </div>
           <div class="card col-4 bg-primary">
             <div class="card-body" style="padding: 0.5rem 0.5rem">
