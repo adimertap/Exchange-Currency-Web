@@ -63,6 +63,9 @@
         .bg-black-tes{
             background-color: #071E22;
         }
+        .bg-ijo{
+            background-color: #679289;
+        }
 
 
     </style>
@@ -81,7 +84,7 @@
 
 <body>
    
-    <main class="main bg-soft-success" id="top" >
+    <main class="main bg-ijo" id="top" >
         <div class="container-fluid" data-layout="container">
             <div class="content">
                 @yield('content')

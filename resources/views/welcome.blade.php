@@ -80,9 +80,9 @@
           <div class="col-2">
             <img src="{{ $item->img_flag }}" alt="flag" height="60" width="60" />
           </div>
-          <div class="card col-4 bg-primary">
+          <div class="card col-4 bg-secondary">
             <div class="card-body" style="padding: 0.5rem 0.5rem">
-              <h2 class="mb-md-0 fw-bolder text-white text-center">{{ $item->nama_currency }}</h2>
+              <h2 class="mb-md-0 fw-bolder text-tes text-center">{{ $item->nama_currency }}</h2>
             </div>
           </div>
           <div class="card col-4">
