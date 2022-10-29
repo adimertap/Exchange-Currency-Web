@@ -33,12 +33,13 @@
             overflow: hidden;
             position: fixed;
             bottom: 0;
+            padding: 0;
             width: 100%;
         }
         .tesh1{
             color: black;
             white-space: nowrap;
-            padding: 0rem;
+            padding: 0 6rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             animation: move-rtl 24000ms linear infinite;
