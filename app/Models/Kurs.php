@@ -4,9 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Kurs extends Model
 {
+    use SoftDeletes;
+    
     protected $table = "tb_currency";
 
     protected $primaryKey = 'id_currency';
@@ -16,18 +19,16 @@ class Kurs extends Model
         'country',
         'nilai_kurs',
         'jenis_kurs',
-        'img_flag'
+        'img_flag',
+        'keterangan',
+        'urutan'
     ];
 
     protected $hidden = [
         'created_at',
         'updated_at',
+        'deleted_at'
     ];
 
     public $timestamps = true;
-
-    public function Detail()
-    {
-        return $this->hasMany(KursDetail::class, 'id_currency', 'id_currency');
-    }
 }

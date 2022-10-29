@@ -36,22 +36,29 @@
   </div>
 
   <div class="row mt-1 g-3" style="margin-left: 20px">
+    {{-- LEMBAR --}}
     <div class="col-8">
-      <div class="row mt-2 mb-3 border border-1 border-300 rounded-2">
+      <div class="row mt-2 mb-3 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:600px">
         @forelse ($kurs as $item)
         <div class="col-6 mb-3">
           <div class="row flex-between-center">
             <div class="col-2" style="margin-left: 40px">
               <img src="{{ $item->img_flag }}" alt="flag" height="60" />
             </div>
-            <div class="card col-3 bg-primary">
-              <div class="card-body" style="padding: 0.5rem 0.5rem">
-                <h2 class="mb-md-0 fw-bolder text-white text-center">{{ $item->nama_currency }}</h2>
+            <div class="card col-4 bg-primary">
+              <div class="card-body" style="padding: 0.6rem 0.6rem">
+                <h3 class="mb-md-0 fw-bolder text-white text-center">{{ $item->nama_currency }}</h3>
+                @if($item->keterangan == '' || $item->keterangan == '-')
+
+                @else
+                <h6 class="m-0 fw-bolder text-center text-white">( {{ $item->keterangan }} )</h6>
+                @endif
               </div>
             </div>
-            <div class="card col-5">
+            <div class="card col-4">
               <div class="card-body" style="padding: 0.5rem 0.5rem">
                 <h2 class="mb-md-0 fw-bold">{{ number_format($item->nilai_kurs,0,',','.') }}</h2>
+
               </div>
             </div>
           </div>
@@ -59,31 +66,10 @@
         @empty
         <p>Tambah Kurs pada Dashboard Master Data Admin</p>
         @endforelse
-
-        @forelse ($detail as $item)
-        <div class="col-6 mb-3">
-          <div class="row flex-between-center">
-            <div class="col-2" style="margin-left: 40px">
-              <img src="{{ $item->Kurs->img_flag }}" alt="flag" height="60" />
-            </div>
-            <div class="card col-3 bg-primary">
-              <div class="card-body" style="padding: 0.7rem 0.7rem">
-                <h3 class="mb-md-0 fw-bolder text-center text-white">{{ $item->Kurs->nama_currency }}</h3>
-                <h6 class="m-0 fw-bolder text-center text-white">( {{ $item->keterangan }} )</h6>
-              </div>
-            </div>
-            <div class="card col-5">
-              <div class="card-body" style="padding: 0.7rem 0.7rem">
-                <h2 class="mb-md-0 fw-bold">{{ number_format($item->nilai_baru,0,',','.') }}</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        @empty
-
-        @endforelse
       </div>
     </div>
+
+    {{-- COINS --}}
     <div class="col-3 ml-2 mt-4 mb-3 border border-1 border-300 rounded-2" style="margin-left: 50px">
       <h2 class="mb-3 text-white fw-semi-bold text-center bg-black">COINS</h2>
       @forelse ($coins as $item)
@@ -93,13 +79,13 @@
           <div class="col-2">
             <img src="{{ $item->img_flag }}" alt="flag" height="50" />
           </div>
-          <div class="card col-3 bg-primary">
-            <div class="card-body" style="padding: 0.6rem 0.6rem">
+          <div class="card col-4 bg-primary">
+            <div class="card-body" style="padding: 0.5rem 0.5rem">
               <h5 class="mb-md-0 fw-bolder text-white text-center">{{ $item->nama_currency }}</h5>
             </div>
           </div>
-          <div class="card col-5">
-            <div class="card-body" style="padding: 0.6rem 0.6rem">
+          <div class="card col-4">
+            <div class="card-body" style="padding: 0.5rem 0.5rem">
               <h4 class="mb-md-0 fw-bold">{{ number_format($item->nilai_kurs,0,',','.') }}</h4>
             </div>
           </div>

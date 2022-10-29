@@ -16,23 +16,16 @@ class KursController extends Controller
      */
     public function index()
     {
-        $kurs = Kurs::where('jenis_kurs', 'Lembar')
+        $kurs = Kurs::where('jenis_kurs','Lembar')->orderBy('urutan','ASC')
+        ->whereNull('deleted_at')
         ->get();
-
-        // $kurs = KursDetail::leftjoin('tb_currency','tb_det_currency.nama_currency','tb_currency.nama_currency')
-        // ->orderBy('nama_currency','ASC')
-        // ->get();
-        // return $kurs;
-        
-        $coins = Kurs::where('jenis_kurs', 'Coins')->get();
-        $detail = KursDetail::join('tb_currency','tb_det_currency.id_currency','tb_currency.id_currency')
-        ->orderBy('nama_currency')
+        $coins = Kurs::where('jenis_kurs', 'Coins')->orderBy('nama_currency','DESC')
+        ->whereNull('deleted_at')
         ->get();
-
         $today = Carbon::now()->isoFormat('dddd');
         $tanggal = Carbon::now()->format('j F Y');
 
-        return view('welcome', compact('kurs','today','tanggal','coins','detail'));
+        return view('welcome', compact('kurs','today','tanggal','coins'));
     }
 
     /**
