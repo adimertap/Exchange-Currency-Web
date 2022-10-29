@@ -31,7 +31,7 @@
             justify-content: flex-start;
             background: white;
             overflow: hidden;
-            position: fixed;
+            position: absolute;
             bottom: 0;
             padding: 0;
             width: 100%;
