@@ -91,7 +91,7 @@
 <body>
    
     <main class="main bg-ijo" id="top" >
-        <div class="container-fluid" data-layout="container">
+        <div class="container-fluid" data-layout="container" style="padding-left: 0px; padding-right: 0px">
             <div class="content">
                 @yield('content')
             </div>
