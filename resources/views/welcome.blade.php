@@ -9,11 +9,11 @@
           <div class="col-3 text-center">
             <img src="/img/logo.png" alt="120" height="120">
           </div>
-          <div class="col-6 text-center mt-3">
+          <div class="col-6 text-center mt-3 mb-1">
             <div class="text-center">
               <h1 class="text-primary mb-3 fw-bolder bg-soft-success">AUTHORIZED MONEY CHANGER</h1>
-              <h5 class="mb-1 text-white fw-semi-bold">NORTH PADMA STREET LICENSE NO. 23/79/KEP.GBI/Dpr/2021 <br> <b
-                  class="text-primary">PHONE</b> +62851 7325 4848</h5>
+              <h3 class="mb-1 text-white fw-semi-bold">NORTH PADMA STREET <br> LICENSE NO. 23/79/KEP.GBI/Dpr/2021 <br> <b
+                  class="text-primary mt-1">PHONE</b> +62851 7325 4848</h3>
             </div>
           </div>
           <div class="col-3 text-center">
@@ -22,13 +22,13 @@
         </div>
         <div class="row">
           <div class="col-3 text-center">
-            <h4 class="mb-1 text-white fw-semi-bold">{{ $today }}, {{ $tanggal }}</h4>
+            <h3 class="mb-1 text-white fw-semi-bold">{{ $today }}, {{ $tanggal }}</h3>
           </div>
           <div class="col-6 text-center">
-            <h4 class="mb-1 text-white fw-semi-bold">Riasta Valasindo</h4>
+            <h3 class="mb-1 text-white fw-semi-bold">Riasta Valasindo</h3>
           </div>
           <div class="col-3 text-center">
-            <h4 class="mb-1 text-white fw-semi-bold"><span id="clock"> 12:16 PM</span></h4>
+            <h3 class="mb-1 text-white fw-semi-bold"><span id="clock"> 12:16 PM</span></h3>
           </div>
         </div>
       </div>
@@ -43,21 +43,21 @@
         <div class="col-6 mb-3">
           <div class="row flex-between-center">
             <div class="col-2" style="margin-left: 40px">
-              <img src="{{ $item->img_flag }}" alt="flag" height="60" width="60" />
+              <img src="{{ $item->img_flag }}" alt="flag" height="80" width="80" />
             </div>
             <div class="card col-4 bg-primary">
               <div class="card-body" style="padding: 0.6rem 0.6rem">
-                <h3 class="mb-md-0 fw-bolder text-white text-center">{{ $item->nama_currency }}</h3>
+                <h1 class="mb-md-0 fw-bolder text-white text-center">{{ $item->nama_currency }}</h1>
                 @if($item->keterangan == '' || $item->keterangan == '-')
 
                 @else
-                <h6 class="m-0 fw-bolder text-center text-white">( {{ $item->keterangan }} )</h6>
+                <h3 class="m-0 fw-bolder text-center text-white">( {{ $item->keterangan }} )100</h3>
                 @endif
               </div>
             </div>
             <div class="card col-4">
               <div class="card-body" style="padding: 0.5rem 0.5rem">
-                <h2 class="mb-md-0 fw-bold">{{ number_format($item->nilai_kurs,0,',','.') }}</h2>
+                <h1 class="mb-md-0 fw-bold">{{ number_format($item->nilai_kurs,0,',','.') }}</h1>
 
               </div>
             </div>
@@ -77,16 +77,16 @@
       <div class="col-11 mb-3" style="margin-left: 16px">
         <div class="row flex-between-center">
           <div class="col-2">
-            <img src="{{ $item->img_flag }}" alt="flag" height="50" width="50" />
+            <img src="{{ $item->img_flag }}" alt="flag" height="60" width="60" />
           </div>
           <div class="card col-4 bg-primary">
             <div class="card-body" style="padding: 0.5rem 0.5rem">
-              <h5 class="mb-md-0 fw-bolder text-white text-center">{{ $item->nama_currency }}</h5>
+              <h2 class="mb-md-0 fw-bolder text-white text-center">{{ $item->nama_currency }}</h2>
             </div>
           </div>
           <div class="card col-4">
             <div class="card-body" style="padding: 0.5rem 0.5rem">
-              <h4 class="mb-md-0 fw-bold">{{ number_format($item->nilai_kurs,0,',','.') }}</h4>
+              <h2 class="mb-md-0 fw-bold">{{ number_format($item->nilai_kurs,0,',','.') }}</h2>
             </div>
           </div>
         </div>
