@@ -95,14 +95,15 @@
             <div class="content">
                 @yield('content')
             </div>
-            <div class="text-wrapper">
+            
+        </div>
+        <div class="text-wrapper">
                 <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice</h1>
                 <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice</h1>
                 <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice</h1>
                 <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice</h1>
                 <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice</h1>
             </div>
-        </div>
       
     </main>
   
