@@ -31,7 +31,7 @@
             justify-content: flex-start;
             background: white;
             overflow: hidden;
-            position: absolute;
+            position: fixed;
             bottom: 0;
             padding: 0;
             width: 100%;
@@ -50,7 +50,7 @@
                 transform: translateX(0);
             }
             100%{
-                transform: translateX(-150%);
+                transform: translateX(-100%);
             }
         }
         
@@ -73,6 +73,11 @@
         .text-nilai{
             color: #2A367E;
         }
+        body{
+            overflow: -moz-scrollbars-vertical;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
 
 
     </style>
@@ -92,7 +97,7 @@
 <body>
    
     <main class="main bg-ijo" id="top" >
-        <div class="container-fluid" data-layout="container" style="padding: 0px">
+        <div class="container-fluid" data-layout="container" style="padding: 0px" style="overflow-y: hidden; overflow-x: hidden" >
             <div class="content">
                 @yield('content')
             </div>
