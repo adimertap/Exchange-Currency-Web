@@ -40,10 +40,12 @@
     {{-- LEMBAR --}}
     <div class="col-8">
       <div class="row mt-2 mb-3 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:750px">
+       
+
         @forelse ($kurs as $item)
         <div class="col-6 mb-3">
           <div class="row flex-between-center">
-            <div class="col-2" style="margin-left: 40px">
+            <div class="col-1" style="margin-left: 40px">
               <img src="{{ $item->img_flag }}" alt="flag" height="80" width="80" />
             </div>
             <div class="card col-4 bg-kotak">
@@ -58,7 +60,21 @@
             </div>
             <div class="card col-4">
               <div class="card-body" style="padding: 0.5rem 0.5rem">
-                <h1 class="mb-md-0 fw-bold text-nilai">{{ number_format($item->nilai_kurs,0,',','.') }}</h1>
+                  {{-- @php
+                    $yo = []
+                    $tes = $item->nilai_kurs;
+                      if (fmod($tes,1) !== 0.00) {
+                          
+                      }
+                    
+                  @endphp --}}
+                  @if(fmod($item->nilai_kurs,1) !== 0.00)
+                  <h1 class="mb-md-0 fw-bold text-nilai">{{ number_format($item->nilai_kurs,2,',','.') }}</h1>
+                  @else
+                  <h1 class="mb-md-0 fw-bold text-nilai">{{ number_format($item->nilai_kurs,0,',','.') }}</h1>
+
+                  @endif
+
 
               </div>
             </div>

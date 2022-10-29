@@ -78,9 +78,7 @@
             overflow-x: hidden;
             overflow-y: hidden;
         }
-        .container-fluid::-webkit-scrollbar { 
-        display: none;  /* Safari and Chrome */
-        }
+        
 
 
     </style>
