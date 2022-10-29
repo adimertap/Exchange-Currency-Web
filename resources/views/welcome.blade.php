@@ -1,13 +1,14 @@
 @extends('layout')
 
 @section('content')
+
 <div class="col-12">
-  <div class="card bg-black text-white">
+  <div class="card bg-black-tes text-white">
     <div class="card-header position-relative">
       <div class="position-relative z-index-2">
         <div class="row">
           <div class="col-3 text-center">
-            <img src="/img/logo.png" alt="120" height="120">
+            <img src="/img/logo.png" alt="170" height="170">
           </div>
           <div class="col-6 text-center mt-3 mb-1">
             <div class="text-center">
@@ -17,7 +18,7 @@
             </div>
           </div>
           <div class="col-3 text-center">
-            <img src="/img/bm.png" alt="120" height="120">
+            <img src="/img/bm.png" alt="170" height="170">
           </div>
         </div>
         <div class="row">
@@ -45,13 +46,13 @@
             <div class="col-2" style="margin-left: 40px">
               <img src="{{ $item->img_flag }}" alt="flag" height="80" width="80" />
             </div>
-            <div class="card col-4 bg-primary">
+            <div class="card col-4 bg-secondary">
               <div class="card-body" style="padding: 0.6rem 0.6rem">
-                <h1 class="mb-md-0 fw-bolder text-white text-center">{{ $item->nama_currency }}</h1>
+                <h1 class="mb-md-0 fw-bolder text-tes text-center">{{ $item->nama_currency }}</h1>
                 @if($item->keterangan == '' || $item->keterangan == '-')
 
                 @else
-                <h4 class="m-0 fw-bolder text-center text-white">( {{ $item->keterangan }} )</h4>
+                <h4 class="m-0 fw-bolder text-center text-tes">( {{ $item->keterangan }} )</h4>
                 @endif
               </div>
             </div>
@@ -71,7 +72,7 @@
 
     {{-- COINS --}}
     <div class="col-3 ml-2 mt-4 mb-3 border border-1 border-300 rounded-2" style="margin-left: 50px">
-      <h2 class="mb-3 text-white fw-semi-bold text-center bg-black">COINS</h2>
+      <h2 class="mb-3 text-white fw-semi-bold text-center bg-black-tes">COINS</h2>
       @forelse ($coins as $item)
 
       <div class="col-11 mb-3" style="margin-left: 16px">

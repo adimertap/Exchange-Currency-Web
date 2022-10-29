@@ -42,7 +42,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             animation: move-rtl 14000ms linear infinite;
-            font-size: 50px;
+            font-size: 52px;
         }
         @keyframes move-rtl{
             0%{
@@ -56,6 +56,14 @@
         .yellow-card{
             color: yellow;
         }
+        .text-tes{
+            color: #2A367E;
+        }
+
+        .bg-black-tes{
+            background-color: #071E22;
+        }
+
 
     </style>
    
