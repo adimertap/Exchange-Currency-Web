@@ -38,7 +38,7 @@
   <div class="row mt-1 g-3" style="margin-left: 20px">
     {{-- LEMBAR --}}
     <div class="col-8">
-      <div class="row mt-2 mb-3 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:600px">
+      <div class="row mt-2 mb-3 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:700px">
         @forelse ($kurs as $item)
         <div class="col-6 mb-3">
           <div class="row flex-between-center">
@@ -51,7 +51,7 @@
                 @if($item->keterangan == '' || $item->keterangan == '-')
 
                 @else
-                <h3 class="m-0 fw-bolder text-center text-white">( {{ $item->keterangan }} )100</h3>
+                <h4 class="m-0 fw-bolder text-center text-white">( {{ $item->keterangan }} )100100</h4>
                 @endif
               </div>
             </div>
