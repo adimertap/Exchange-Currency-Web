@@ -74,9 +74,12 @@
             color: #2A367E;
         }
         body{
-            overflow: -moz-scrollbars-vertical;
+            overflow: hidden;
             overflow-x: hidden;
             overflow-y: hidden;
+        }
+        .container-fluid::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
         }
 
 
@@ -97,7 +100,7 @@
 <body>
    
     <main class="main bg-ijo" id="top" >
-        <div class="container-fluid" data-layout="container" style="padding: 0px" style="overflow-y: hidden; overflow-x: hidden" >
+        <div class="container-fluid" data-layout="container" style="padding: 0px;width: 100%; height: 100%; " style="overflow-y: hidden; overflow-x: hidden" >
             <div class="content">
                 @yield('content')
             </div>
