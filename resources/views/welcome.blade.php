@@ -12,7 +12,7 @@
           </div>
           <div class="col-6 text-center mt-3 mb-1">
             <div class="text-center">
-              <h1 class="text-primary mb-3 fw-bolder bg-soft-success text-white">AUTHORIZED MONEY CHANGER</h1>
+              <h1 class="text-primary mb-3 fw-bolder bg-ijo text-white">AUTHORIZED MONEY CHANGER</h1>
               <h3 class="mb-1 text-white fw-semi-bold">NORTH PADMA STREET <br> LICENSE NO. 23/79/KEP.GBI/Dpr/2021 <br> <b
                   class="text-primary mt-1">PHONE</b> +62851 7325 4848</h3>
             </div>
