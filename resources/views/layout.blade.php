@@ -42,7 +42,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             animation: move-rtl 14000ms linear infinite;
-            font-size: 56px;
+            font-size: 50px;
         }
         @keyframes move-rtl{
             0%{
