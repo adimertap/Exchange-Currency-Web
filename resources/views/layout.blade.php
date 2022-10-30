@@ -43,7 +43,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             animation: move-rtl 24000ms linear infinite;
-            font-size: 52px;
+            font-size: 58px;
         }
         @keyframes move-rtl{
             0%{
@@ -77,6 +77,18 @@
             overflow: hidden;
             overflow-x: hidden;
             overflow-y: hidden;
+        }
+        .h11{
+            font-size: 45px !important;
+        }
+        .h22{
+            font-size: 36px !important;
+        }
+        .h33{
+            font-size: 30px !important;
+        }
+        .h44{
+            font-size: 26px !important;
         }
         
 

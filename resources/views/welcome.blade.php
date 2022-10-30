@@ -12,8 +12,8 @@
           </div>
           <div class="col-6 text-center mt-3 mb-1">
             <div class="text-center">
-              <h1 class="text-primary mb-3 fw-bolder bg-ijo text-white">AUTHORIZED MONEY CHANGER</h1>
-              <h3 class="mb-1 text-white fw-semi-bold">NORTH PADMA STREET <br> LICENSE NO. 23/79/KEP.GBI/Dpr/2021 <br> <b
+              <h1 class="text-primary mb-3 fw-bolder bg-ijo text-white h11">AUTHORIZED MONEY CHANGER</h1>
+              <h3 class="mb-1 text-white fw-semi-bold h33">NORTH PADMA STREET <br> LICENSE NO. 23/79/KEP.GBI/Dpr/2021 <br> <b
                   class="text-primary mt-1">PHONE</b> +62851 7325 4848</h3>
             </div>
           </div>
@@ -23,13 +23,13 @@
         </div>
         <div class="row">
           <div class="col-3 text-center">
-            <h3 class="mb-1 text-white fw-semi-bold">{{ $today }}, {{ $tanggal }}</h3>
+            <h3 class="mb-1 text-white fw-semi-bold h33">{{ $today }}, {{ $tanggal }}</h3>
           </div>
           <div class="col-6 text-center">
-            <h3 class="mb-1 text-white fw-semi-bold">Riasta Valasindo</h3>
+            <h3 class="mb-1 text-white fw-semi-bold h33">Riasta Valasindo</h3>
           </div>
           <div class="col-3 text-center">
-            <h3 class="mb-1 text-white fw-semi-bold"><span id="clock"> 12:16 PM</span></h3>
+            <h3 class="mb-1 text-white fw-semi-bold h33"><span id="clock"> 12:16 PM</span></h3>
           </div>
         </div>
       </div>
@@ -37,7 +37,6 @@
   </div>
 
   <div class="row mt-1 g-3" style="margin-left: 20px">
-    {{-- LEMBAR --}}
     <div class="col-8">
       <div class="row mt-2 mb-3 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:750px">
        
@@ -50,11 +49,11 @@
             </div>
             <div class="card col-4 bg-kotak">
               <div class="card-body" style="padding: 0.6rem 0.6rem">
-                <h1 class="mb-md-0 fw-bolder text-tes text-center">{{ $item->nama_currency }}</h1>
+                <h1 class="mb-md-0 fw-bolder text-tes text-center h11">{{ $item->nama_currency }}</h1>
                 @if($item->keterangan == '' || $item->keterangan == '-')
 
                 @else
-                <h4 class="m-0 fw-bolder text-center text-tes">( {{ $item->keterangan }} )</h4>
+                <h4 class="m-0 fw-bolder text-center text-tes h44">( {{ $item->keterangan }} )</h4>
                 @endif
               </div>
             </div>
@@ -69,9 +68,9 @@
                     
                   @endphp --}}
                   @if(fmod($item->nilai_kurs,1) !== 0.00)
-                  <h1 class="mb-md-0 fw-bold text-nilai">{{ number_format($item->nilai_kurs,2,',','.') }}</h1>
+                  <h1 class="mb-md-0 fw-bold text-nilai h11">{{ number_format($item->nilai_kurs,2,',','.') }}</h1>
                   @else
-                  <h1 class="mb-md-0 fw-bold text-nilai">{{ number_format($item->nilai_kurs,0,',','.') }}</h1>
+                  <h1 class="mb-md-0 fw-bold text-nilai h11">{{ number_format($item->nilai_kurs,0,',','.') }}</h1>
 
                   @endif
 
@@ -88,7 +87,7 @@
 
     {{-- COINS --}}
     <div class="col-3 ml-2 mt-4 mb-3 border border-1 border-300 rounded-2" style="margin-left: 50px">
-      <h2 class="mb-3 text-white fw-semi-bold text-center bg-black-tes">COINS</h2>
+      <h2 class="mb-3 text-white fw-semi-bold text-center bg-black-tes h22">COINS</h2>
       @forelse ($coins as $item)
 
       <div class="col-11 mb-3" style="margin-left: 16px">
@@ -98,12 +97,12 @@
           </div>
           <div class="card col-4 bg-kotak">
             <div class="card-body" style="padding: 0.5rem 0.5rem">
-              <h2 class="mb-md-0 fw-bolder text-tes text-center">{{ $item->nama_currency }}</h2>
+              <h2 class="mb-md-0 fw-bolder text-tes text-center h22">{{ $item->nama_currency }}</h2>
             </div>
           </div>
           <div class="card col-4">
             <div class="card-body" style="padding: 0.5rem 0.5rem">
-              <h2 class="mb-md-0 fw-bold text-nilai">{{ number_format($item->nilai_kurs,0,',','.') }}</h2>
+              <h2 class="mb-md-0 fw-bold text-nilai h22">{{ number_format($item->nilai_kurs,0,',','.') }}</h2>
             </div>
           </div>
         </div>
