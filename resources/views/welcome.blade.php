@@ -36,9 +36,9 @@
     </div>
   </div>
 
-  <div class="row mt-1 g-3" style="margin-left: 20px">
+  <div class="row mt-1" style="margin-left: 20px">
     <div class="col-8">
-      <div class="row mt-2 mb-3 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:750px">
+      <div class="row mt-2 mb-3 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:1000px">
        
 
         @forelse ($kurs as $item)
@@ -48,7 +48,7 @@
               <img src="{{ $item->img_flag }}" alt="flag" height="80" width="80" />
             </div>
             <div class="card col-4 bg-kotak">
-              <div class="card-body" style="padding: 0.6rem 0.6rem">
+              <div class="card-body" style="padding: 0.5rem 0.5rem">
                 <h1 class="mb-md-0 fw-bolder text-tes text-center h11">{{ $item->nama_currency }}</h1>
                 @if($item->keterangan == '' || $item->keterangan == '-')
 
@@ -58,15 +58,7 @@
               </div>
             </div>
             <div class="card col-4">
-              <div class="card-body" style="padding: 0.5rem 0.5rem">
-                  {{-- @php
-                    $yo = []
-                    $tes = $item->nilai_kurs;
-                      if (fmod($tes,1) !== 0.00) {
-                          
-                      }
-                    
-                  @endphp --}}
+              <div class="card-body" style="padding: 0.4rem 0.4rem">
                   @if(fmod($item->nilai_kurs,1) !== 0.00)
                   <h1 class="mb-md-0 fw-bold text-nilai h11">{{ number_format($item->nilai_kurs,2,',','.') }}</h1>
                   @else
@@ -86,7 +78,7 @@
     </div>
 
     {{-- COINS --}}
-    <div class="col-3 ml-2 mt-4 mb-3 border border-1 border-300 rounded-2" style="margin-left: 50px">
+    <div class="col-3 ml-2 mt-3 mb-3 border border-1 border-300 rounded-2" style="margin-left: 50px">
       <h2 class="mb-3 text-white fw-semi-bold text-center bg-black-tes h22">COINS</h2>
       @forelse ($coins as $item)
 
