@@ -43,7 +43,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             animation: move-rtl 24000ms linear infinite;
-            font-size: 60px;
+            font-size: 35px;
         }
         @keyframes move-rtl{
             0%{
