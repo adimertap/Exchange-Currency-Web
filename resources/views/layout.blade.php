@@ -79,7 +79,7 @@
             overflow-y: hidden;
         }
         .h11{
-            font-size: 48px !important;
+            font-size: 43px !important;
         }
         .h22{
             font-size: 38px !important;
