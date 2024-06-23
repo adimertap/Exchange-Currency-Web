@@ -4,46 +4,46 @@
 
 <div class="col-12">
   <div class="card bg-black-tes text-white">
-    <div class="card-header position-relative">
+    <div class="card-header position-relative pb-0">
       <div class="position-relative z-index-2">
         <div class="row">
           <div class="col-3 text-center">
-            <img src="/img/logo.png" alt="170" height="170">
+            <img src="/img/logo.png" alt="150" height="150">
           </div>
           <div class="col-6 text-center mt-3 mb-1">
             <div class="text-center">
-              <h1 class="text-primary mb-3 fw-bolder bg-ijo text-white h11">AUTHORIZED MONEY CHANGER</h1>
-              <h3 class="mb-1 text-white fw-semi-bold h33">NORTH PADMA STREET <br> LICENSE NO. 23/79/KEP.GBI/Dpr/2021 <br> <b
+              <h1 class="text-primary mb-1 fw-bolder bg-ijo text-white h11">AUTHORIZED MONEY CHANGER</h1>
+              <h4 class="mb-1 text-white fw-semi-bold h44">NORTH PADMA STREET <br> LICENSE NO. 23/79/KEP.GBI/Dpr/2021 <br> <b
                   class="text-primary mt-1">PHONE</b> +62851 7325 4848</h3>
             </div>
           </div>
           <div class="col-3 text-center">
-            <img src="/img/bm.png" alt="170" height="170">
+            <img src="/img/bm.png" alt="150" height="150">
           </div>
         </div>
         <div class="row">
           <div class="col-3 text-center">
-            <h3 class="mb-1 text-white fw-semi-bold h33">{{ $today }}, {{ $tanggal }}</h3>
+            <h4 class="mb-1 text-white fw-semi-bold h44">{{ $today }}, {{ $tanggal }}</h3>
           </div>
           <div class="col-6 text-center">
-            <h3 class="mb-1 text-white fw-semi-bold h33">Riasta Valasindo</h3>
+            <h4 class="mb-1 text-white fw-semi-bold h44">Riasta Valasindo</h3>
           </div>
           <div class="col-3 text-center">
-            <h3 class="mb-1 text-white fw-semi-bold h33"><span id="clock"> 12:16 PM</span></h3>
+            <h4 class="mb-1 text-white fw-semi-bold h44"><span id="clock"> 12:16 PM</span></h3>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row mt-1" style="margin-left: 20px">
+  <div class="row " style="margin-left: 20px">
     <div class="col-8">
-      <div class="row mt-2 mb-3 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:900px">
+      <div class="row mb-3 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:900px">
         @forelse ($kurs as $item)
         <div class="col-6 mb-3">
           <div class="row flex-between-center">
             <div class="col-1" style="margin-left: 40px">
-              <img src="{{ $item->img_flag }}" alt="flag" height="80" width="80" />
+              <img src="{{ $item->img_flag }}" alt="flag" height="70" width="70" />
             </div>
             <div class="card col-4 bg-kotak">
               <div class="card-body" style="padding: 0.5rem 0.5rem">
