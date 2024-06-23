@@ -140,6 +140,10 @@ function displayclock() {
 
     document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec + ' ' + en;
   }
+
+  setTimeout(function(){
+         window.location.reload(1);
+      }, 15000);
     </script>
 
     @endsection
