@@ -4,21 +4,21 @@
 
 <div class="col-12">
   <div class="card bg-black-tes text-white">
-    <div class="card-header position-relative pb-0">
+    <div class="card-header position-relative pb-0 mb-1 pt-0">
       <div class="position-relative z-index-2">
         <div class="row">
           <div class="col-3 text-center">
-            <img src="/img/logo.png" alt="150" height="150">
+            <img src="/img/logo.png" alt="110" height="110">
           </div>
-          <div class="col-6 text-center mt-3 mb-1">
+          <div class="col-6 text-center mt-2 mb-1">
             <div class="text-center">
-              <h1 class="text-primary mb-1 fw-bolder bg-ijo text-white h11">AUTHORIZED MONEY CHANGER</h1>
-              <h2 class="mb-1 text-white fw-semi-bold h44 mt-3">{{ $today }}, {{ $tanggal }} </h2>
-                <h2 class="text-primary mt-2" id="clock">12:16 PM</h2>
+              <h2 class="text-primary mb-1 fw-bolder bg-ijo text-white h11">AUTHORIZED MONEY CHANGER</h2>
+              <h2 class="mb-1 text-white fw-semi-bold h33 mt-1">{{ $today }}, {{ $tanggal }}, <span class="text-primary mt-2" id="clock">12:16 PM</span> </h2>
+
             </div>
           </div>
           <div class="col-3 text-center">
-            <img src="/img/bm.png" alt="150" height="150">
+            <img src="/img/bm.png" alt="110" height="110">
           </div>
         </div>
         {{-- <div class="row">
@@ -38,7 +38,7 @@
 
   <div class="row mt-2" style="margin-left: 10px; margin-right: 10px">
     <div class="col-12">
-      <div class="row mb-3 pt-2 pe-4 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:900px">
+      <div class="row mb-3 pt-0 pe-4 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:940px">
         @forelse ($kurs as $item)
         <div class="col-4 mb-4">
           <div class="row flex-between-center">
