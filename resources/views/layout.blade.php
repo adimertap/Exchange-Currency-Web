@@ -53,7 +53,7 @@
                 transform: translateX(-100%);
             }
         }
-        
+
         .yellow-card{
             color: yellow;
         }
@@ -90,11 +90,11 @@
         .h44{
             font-size: 29px !important;
         }
-        
+
 
 
     </style>
-   
+
     <script>
         var isFluid = JSON.parse(localStorage.getItem('isFluid'));
         if (isFluid) {
@@ -108,25 +108,24 @@
 
 
 <body>
-   
+
     <main class="main bg-ijo" id="top" >
         <div class="container-fluid" data-layout="container" style="padding: 0px;width: 100%; height: 100%; " style="overflow-y: hidden; overflow-x: hidden" >
             <div class="content">
                 @yield('content')
             </div>
-            
+
         </div>
         <div class="text-wrapper">
-                <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice</h1>
-                <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice</h1>
-                <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice</h1>
-                <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice</h1>
-                <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice</h1>
+                <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice. North Padma Street License NO. 23/79/KEP.GBI/Dpr/2021 Phone: +62851 7325 4848</h1>
+                <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice. North Padma Street License NO. 23/79/KEP.GBI/Dpr/2021 Phone: +62851 7325 4848</h1>
+                <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice. North Padma Street License NO. 23/79/KEP.GBI/Dpr/2021 Phone: +62851 7325 4848</h1>
+                <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice. North Padma Street License NO. 23/79/KEP.GBI/Dpr/2021 Phone: +62851 7325 4848</h1>
+                <h1 class="tesh1">Fully Licensed PT. Riasta Valasindo <b>"No Comission"</b>. Thank You. Rates May Change Anytime Without Notice. North Padma Street License NO. 23/79/KEP.GBI/Dpr/2021 Phone: +62851 7325 4848</h1>
             </div>
-      
+
     </main>
-  
-  
+
     <script src="/../falcon/vendors/choices/choices.min.js"></script>
     <script src="/../falcon/vendors/popper/popper.min.js"></script>
     <script src="/../falcon/vendors/bootstrap/bootstrap.min.js"></script>
@@ -140,7 +139,7 @@
     <script src="/../falcon/assets/js/config.js"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-    
+
 </body>
 
 

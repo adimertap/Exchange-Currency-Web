@@ -13,32 +13,32 @@
           <div class="col-6 text-center mt-3 mb-1">
             <div class="text-center">
               <h1 class="text-primary mb-1 fw-bolder bg-ijo text-white h11">AUTHORIZED MONEY CHANGER</h1>
-              <h2 class="mb-1 text-white fw-semi-bold h44 mt-3">{{ $today }}, {{ $tanggal }} </h2>
-                <h2 class="text-primary mt-2" id="clock">12:16 PM</h2>
+              <h4 class="mb-1 text-white fw-semi-bold h44">NORTH PADMA STREET <br> LICENSE NO. 23/79/KEP.GBI/Dpr/2021 <br> <b
+                  class="text-primary mt-1">PHONE</b> +62851 7325 4848</h3>
             </div>
           </div>
           <div class="col-3 text-center">
             <img src="/img/bm.png" alt="150" height="150">
           </div>
         </div>
-        {{-- <div class="row">
+        <div class="row">
           <div class="col-3 text-center">
             <h4 class="mb-1 text-white fw-semi-bold h44">{{ $today }}, {{ $tanggal }}</h3>
           </div>
           <div class="col-6 text-center">
-            <h4 class="mb-1 text-white fw-semi-bold h44"></h3>
+            <h4 class="mb-1 text-white fw-semi-bold h44">Riasta Valasindo</h3>
           </div>
           <div class="col-3 text-center">
             <h4 class="mb-1 text-white fw-semi-bold h44"><span id="clock"> 12:16 PM</span></h3>
           </div>
-        </div> --}}
+        </div>
       </div>
     </div>
   </div>
 
   <div class="row mt-2" style="margin-left: 10px; margin-right: 10px">
     <div class="col-12">
-      <div class="row mb-3 pt-4 pe-4 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:900px">
+      <div class="row mb-3 pt-4 pe-4 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:800px">
         @forelse ($kurs as $item)
         <div class="col-4 mb-4">
           <div class="row flex-between-center">
