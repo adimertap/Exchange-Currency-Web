@@ -38,7 +38,7 @@
 
   <div class="row mt-2" style="margin-left: 10px; margin-right: 10px">
     <div class="col-12">
-      <div class="row mb-3 pt-4 pe-4 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:900px">
+      <div class="row mb-3 pt-2 pe-4 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:900px">
         @forelse ($kurs as $item)
         <div class="col-4 mb-4">
           <div class="row flex-between-center">
