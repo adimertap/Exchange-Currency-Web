@@ -19,6 +19,7 @@ class KursController extends Controller
         $kurs = Kurs::where('jenis_kurs','Lembar')->orderBy('urutan','ASC')
         ->whereNull('deleted_at')
         ->get();
+
         $coins = Kurs::where('jenis_kurs', 'Coins')->orderBy('nama_currency','DESC')
         ->whereNull('deleted_at')
         ->get();

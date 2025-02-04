@@ -36,13 +36,13 @@
     </div>
   </div>
 
-  <div class="row " style="margin-left: 20px">
-    <div class="col-8">
-      <div class="row mb-3 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:900px">
+  <div class="row mt-2" style="margin-left: 10px; margin-right: 10px">
+    <div class="col-12">
+      <div class="row mb-3 pt-4 pe-4 border border-1 border-300 rounded-2" style="flex-direction: column; max-height:800px">
         @forelse ($kurs as $item)
-        <div class="col-6 mb-3">
+        <div class="col-4 mb-4">
           <div class="row flex-between-center">
-            <div class="col-1" style="margin-left: 40px">
+            <div class="col-1" style="margin-left: 50px">
               <img src="{{ $item->img_flag }}" alt="flag" height="70" width="70" />
             </div>
             <div class="card col-4 bg-kotak">
@@ -63,8 +63,6 @@
                   <h1 class="mb-md-0 fw-bold text-nilai h11">{{ number_format($item->nilai_kurs,0,',','.') }}</h1>
 
                   @endif
-
-
               </div>
             </div>
           </div>
@@ -76,7 +74,7 @@
     </div>
 
     {{-- COINS --}}
-    <div class="col-3 ml-2 mt-3 mb-3 border border-1 border-300 rounded-2" style="margin-left: 50px">
+    {{-- <div class="col-3 ml-2 mt-3 mb-3 border border-1 border-300 rounded-2" style="margin-left: 50px">
       <h2 class="mb-3 text-white fw-semi-bold text-center bg-black-tes h22">COINS</h2>
       @forelse ($coins as $item)
 
@@ -102,7 +100,7 @@
       @empty
 
       @endforelse
-    </div>
+    </div> --}}
 
     <script>
       setInterval(displayclock, 500);
