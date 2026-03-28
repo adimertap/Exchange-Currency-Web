@@ -18,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [App\Http\Controllers\KursController::class, 'index'])->name('kurs');
+Route::get('/welcome-fragment', [App\Http\Controllers\KursController::class, 'welcomeFragment'])->name('welcome.fragment');

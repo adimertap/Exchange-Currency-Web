@@ -30,6 +30,21 @@ class KursController extends Controller
     }
 
     /**
+     * HTML fragment for AJAX refresh (no full page reload).
+     */
+    public function welcomeFragment()
+    {
+        $kurs = Kurs::where('jenis_kurs', 'Lembar')->orderBy('urutan', 'ASC')
+            ->whereNull('deleted_at')
+            ->get();
+
+        $today = Carbon::now()->isoFormat('dddd');
+        $tanggal = Carbon::now()->format('j F Y');
+
+        return view('partials.welcome-refresh', compact('kurs', 'today', 'tanggal'));
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
